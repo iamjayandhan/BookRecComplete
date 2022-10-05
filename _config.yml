@@ -1,18 +1,26 @@
-title: Your awesome title
+title: jekyll-bookworm
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: Subhodeep Sarkar
+  email:
 description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  jekyll-bookworm is a template to provide Jekyll users
+  with a simple, hackable book reviews system. Contributions
+  welcome!
 
 show_excerpts: false # set to true to show excerpts on the homepage
+
+###### comment out base url out ######
+
+baseurl: "/jekyll-bookworm" # the subpath of your site, e.g. /blog
+url: "https://subhodeeps.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: astres_occlus
+github_username:  subhodeeps
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
+  skin: dark
 
   # generate social links in footer
   social_links:
@@ -59,3 +67,31 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+#####################################
+permalink: /:categories/:title/
+
+# Collections
+collections:
+    books:
+        output: true
+        permalink: /:collection/:title/
+
+future: true
+
+header_pages:
+  - books.md
+  - howto.md
+
+include:
+  - images
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - examples/
+  - README.md

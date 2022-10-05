@@ -1,3 +1,8 @@
+---
+layout: default
+title: Read Me
+permalink: /howto/
+---
 
 # jekyll-bookworm
 

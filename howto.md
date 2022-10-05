@@ -64,7 +64,7 @@ include:
 
 What it does:
  - Define a new [Jekyll collection](https://jekyllrb.com/docs/collections/) named `books`
- - Specify that each book review should have its own page, and that the reviews' permalink should be [mywebsite.com/books/a-book-i-liked/](https://subhodeeps.github.io/jekyll-bookworm/books/kafka-0n-the-shore/)
+ - Specify that each book review should have its own page, and that the reviews' permalink should be [mywebsite.com/books/a-book-i-liked/](https://subhodeeps.github.io/jekyll-bookworm/books/kafka-on-the-shore/)
  - The `future: true` option will help us list books that we would like to read (that is, books added now with a future date)
  - The `images` directory will store a folder named `covers` containing the book covers.
 
